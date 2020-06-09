@@ -1,0 +1,108 @@
+.new-action-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 16px 0 16px 0;
+}
+
+.new-action-container section.form {
+  width: 50%;
+  max-width: 690px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.new-action-container section.form input {
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.new-action-container section.form .data-head {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.new-action-container section.form form .select {
+  margin-bottom: 16px;
+}
+
+/* .new-action-container section.form .select div {
+  height: 48px;
+} */
+
+.new-action-container section.form h1 {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 16px 0;
+}
+
+.new-action-container section.form form div.select-action-container {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-action-container section.form form div.select-action-container .select {
+  width: 75%;
+}
+
+.new-action-container section.form form div.select-action-container div.select-amount-unit-container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.new-action-container section.form form div.select-action-container div.select-amount-unit-container .select {
+  width: 40%;
+}
+
+.new-action-container section.form .sector-select {
+  width: 200px;
+}
+
+.new-action-container section.form ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.new-action-container ul li .data-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 32px;
+  padding: 8px;
+}
+
+.new-action-container ul li .data-details div {
+  display: flex;
+  align-items: center;
+}
+
+.new-action-container ul li .data-details div strong {
+  width: 148px;
+  color: #41414d;
+}
+
+.new-action-container ul li .data-details div p {
+  color: #737380;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.new-action-container section.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-action-container section.form form button.button {
+  width: 25%;
+  align-self: center;
+}
