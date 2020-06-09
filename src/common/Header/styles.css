@@ -1,0 +1,71 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 128px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-container .menu-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.header-container .menu-container .logo {
+  margin-left: 16px;
+}
+
+.header-container .menu-container .logo img {
+  width: 257px;
+  height: 96px;
+  left: 16px;
+  top: 16px;
+}
+
+.header-container .menu-container h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-container .option-container {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.header-container .option-container .button {
+  width: 224px;
+  margin: 0;
+}
+
+.header-container .option-container .profile {
+  margin-right: 16px;
+}
+
+.header-container .option-container .profile img {
+  width: 115px;
+  height: 107px;
+  border-radius: 100px;
+}
