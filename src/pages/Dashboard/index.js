@@ -76,7 +76,7 @@ export default function Dashboard() {
               minValue: 0,
             },
             vAxis: {
-              title: "City",
+              title: "Ações",
             },
           }}
           legendToggle

@@ -6,7 +6,7 @@
   align-items: center;
 
   width: 100%;
-  height: 128px;
+  height: 80px;
 
   border-radius: 8px;
 
@@ -28,8 +28,8 @@
 }
 
 .header-container .menu-container .logo img {
-  width: 257px;
-  height: 96px;
+  width: 200px;
+  height: 76px;
   left: 16px;
   top: 16px;
 }
@@ -38,13 +38,18 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 35px;
 
   color: #000000;
-
+  
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* .header-container .menu-container h1:hover {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+} */
+
 
 .header-container .option-container {
   width: 25%;
@@ -58,6 +63,7 @@
 .header-container .option-container .button {
   width: 224px;
   margin: 0;
+  margin-right: 20px;
 }
 
 .header-container .option-container .profile {
@@ -65,7 +71,7 @@
 }
 
 .header-container .option-container .profile img {
-  width: 115px;
-  height: 107px;
+  width: 60px;
+  height: 60px;
   border-radius: 100px;
 }

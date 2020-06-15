@@ -17,9 +17,10 @@
   padding: 18px;
 }
 
-.new-user-container section.form img.userImg {
-  align-self: center;
-  margin-bottom: 24px;
+.new-user-container section.form div.userImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .new-user-container section.form input {

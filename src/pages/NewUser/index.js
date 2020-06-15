@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import Select from "react-select";
 
-import fotoContent from "../../assets/foto-content.png";
 import Header from "../../common/Header";
+import Dropzone from "../../components/Dropzone"
 
 import api from "../../services/api";
 import "./styles.css";
@@ -65,7 +65,9 @@ export default function Main() {
 
       <div className="new-user-container">
         <section className="form">
-          <img className="userImg" src={fotoContent} alt="" />
+          <div >
+            <Dropzone className="userimg"/>
+          </div>
 
           <form onSubmit={handleNewUser}>
             <input

@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import Select from "react-select";
 
-import fotoContent from "../../assets/foto-content.png";
 import Header from "../../common/Header";
 
 import api from "../../services/api";
 import "./styles.css";
+import Dropzone from '../../components/Dropzone'
 
-export default function Main() {
+export default function NewAction() {
   const history = useHistory();
   const [typesAction, setTypesAction] = useState([]);
   const [typesTrail, setTypesTrail] = useState([]);
@@ -18,7 +18,7 @@ export default function Main() {
   const [peoples, setPeoples] = useState("");
   const [typeTrail, setTypeTrail] = useState({});
   const [typeAction, setTypeAction] = useState({});
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState("");
   const [unit, setUnit] = useState(0);
   const [description, setDescription] = useState("");
 
@@ -52,18 +52,19 @@ export default function Main() {
     { value: "D", label: "D" },
   ];
 
-  const optionsAmounts = [
+/*   const optionsAmounts = [
     { value: 1, label: 1 },
     { value: 2, label: 2 },
     { value: 3, label: 3 },
     { value: 4, label: 4 },
-  ];
+  ]; */
 
   const optionsUnits = [
-    { value: 1, label: 1 },
-    { value: 2, label: 2 },
-    { value: 3, label: 3 },
-    { value: 4, label: 4 },
+    { value: 1, label: "m" },
+    { value: 2, label: "m²" },
+    { value: 3, label: "km" },
+    { value: 4, label: "Espéie" },
+    { value: 4, label: "Unidade" },
   ];
 
   async function handleNewAction(e) {
@@ -84,7 +85,7 @@ export default function Main() {
         area_location: area,
         date_action: new Date(),
         peoples_action: peoples,
-        amount_action: amount.value,
+        amount_action: amount,
         unit_action: unit.value,
         description_action: description,
         id_type_action: typeAction.value,
@@ -107,8 +108,10 @@ export default function Main() {
           <ul>
             <li>
               <div className="data-head">
-                <img className="acaoImg" src={fotoContent} alt="" />
-
+                <div className="acaoImg">
+                  <Dropzone />
+                  
+                </div>
                 <div className="data-details">
                   <div>
                     <strong>Número do Registro:</strong>
@@ -139,12 +142,13 @@ export default function Main() {
             </li>
           </ul>
 
-          <form onSubmit={handleNewAction}>
+          <form onSubmit={handleNewAction} >
             <Select
               className="select sector-select mb-3"
               placeholder="Setor"
               options={optionsSectors}
               onChange={setSector}
+              id="select"
             />
 
             <input
@@ -175,12 +179,12 @@ export default function Main() {
               />
 
               <div className="select-amount-unit-container">
-                <Select
+                <input
                   placeholder="Quantidade"
-                  className="select"
-                  options={optionsAmounts}
-                  onChange={setAmount}
+                  value={amount}
+                  onChange={(e) => setAmount(e.target.value)}
                 />
+                
                 <Select
                   placeholder="Unidade"
                   className="select"

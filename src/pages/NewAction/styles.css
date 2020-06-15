@@ -60,7 +60,15 @@
 }
 
 .new-action-container section.form form div.select-action-container div.select-amount-unit-container .select {
-  width: 40%;
+  width: 45%;
+
+}
+.new-action-container section.form form div.select-action-container div.select-amount-unit-container input {
+  width: 45%;
+
+}
+.new-action-container section.form form div.select-action-container div.select-amount-unit-container .css-g1d714-ValueContainer{
+  height: 45px;
 }
 
 .new-action-container section.form .sector-select {
